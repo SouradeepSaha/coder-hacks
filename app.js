@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://souradeepsaha:mOnGOO123@cluster0.yx2eb.azure.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("MONGO_URI", {useNewUrlParser: true, useUnifiedTopology: true});
 
 const postSchema = {
   title: String,
